@@ -1,6 +1,5 @@
 package com.arjunraghavan.android.registerloginscreenconcept.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -15,6 +14,8 @@ class LoginFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         val rootView: ViewGroup =
                 inflater?.inflate(R.layout.fragment_login, container, false) as ViewGroup
+        // Rotate all the views inside the fragment by 180 degrees to counteract the ViewPager's
+        //  being rotated as such (otherwise everything'd be upside down).
         rootView.rotation = 180f
 
         return rootView

@@ -1,5 +1,6 @@
-package com.arjun.android.familink.views
+package com.arjunraghavan.android.registerloginscreenconcept.views
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.support.v4.view.ViewPager
 import android.util.AttributeSet
@@ -8,6 +9,7 @@ import android.view.MotionEvent
 import android.view.MotionEvent.*
 import android.view.View
 
+// Here's where the magic happens
 class RegisterLoginViewPager(context: Context, attributeSet: AttributeSet) :
         ViewPager(context, attributeSet){
     var direction: SwipeDirection = SwipeDirection.down // The user can only swipe down
@@ -34,6 +36,9 @@ class RegisterLoginViewPager(context: Context, attributeSet: AttributeSet) :
         return intercepted // Return new event
     }
 
+    // performClick isn't being overriden (should be for accessibility purposes), but it doesn't
+    //  really matter here.
+    @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         Log.d("TOUCHEVENT", "x: ${event?.x}, y: ${event?.y}\n" +
                 "width: $width, height: $height")

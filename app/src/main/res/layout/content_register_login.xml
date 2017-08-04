@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.arjun.android.familink.views.RegisterLoginViewPager
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.arjunraghavan.android.registerloginscreenconcept.views.RegisterLoginViewPager xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/register_login_viewpager"
     android:overScrollMode="never"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.arjun.android.familink.activities.RegisterLoginActivity" />
+    tools:context="com.arjunraghavan.android.registerloginscreenconcept.activities.RegisterLoginActivity" />
